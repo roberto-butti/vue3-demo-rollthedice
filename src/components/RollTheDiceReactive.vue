@@ -5,7 +5,7 @@
   <button @click="roll()">Let's roll the dice</button>
   <button @click="restart()">Restart</button>
   <ul>
-    <li  v-for="(t, index) in rolls" :key="index">
+    <li  v-for="(t, index) in game.rolls" :key="index">
        {{ t }}
     </li>
   </ul>
