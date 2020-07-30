@@ -44,7 +44,7 @@ export default {
       game.rolls.unshift(game.dice);
     }
 
-    // ##06: implement restart function (inside setup() )
+    // ##006: implement restart function (inside setup() )
     function restart() {
       game.dice=0
       game.rolls = [];
