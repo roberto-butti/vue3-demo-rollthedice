@@ -16,27 +16,22 @@
 import { ref, computed } from "vue";
 export default {
   name: 'RollTheDice',
-
-  // ##002 : implement setup function
+// ##002 : implement setup function
   setup() {
-
-    // ##003 : declare and initialize 2 reactive variables dice and rolls
+// ##003 : declare and initialize 2 reactive variables dice and rolls
     const dice = ref(0);
     const rolls = ref([]);
-
-    // ##004: implement roll function (inside setup() )
+// ##004: implement roll function (inside setup() )
     function roll() {
       dice.value = Math.floor(Math.random() * Math.floor(5)) + 1;
       rolls.value.unshift(dice.value);
     }
-
-    // ##005: implement restart function (inside setup() )
+// ##005: implement restart function (inside setup() )
     function restart() {
       dice.value=0
       rolls.value = [];
     }
-
-    // ##006: define a computed function (total)
+// ##006: define a computed function (total)
     const total = computed(() => {
       let temptotal = 0;
       for (let i=0 ; i< rolls.value.length; i++) {
@@ -44,8 +39,7 @@ export default {
       }
       return temptotal;
     });
-
-    // ##007: expose to the template all stuff (variables, functions, computed etc)
+// ##007: expose to the template all stuff (variables, functions, computed etc)
     return { dice, rolls, total, roll, restart };
   }
 }
