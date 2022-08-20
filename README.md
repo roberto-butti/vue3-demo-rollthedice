@@ -3,7 +3,7 @@
 
 ## My first Vue3 component
 
-![My first Vue3 component: vite, composition API, ref(), computed(), setup()](https://cdn-images-1.medium.com/max/4424/1*oGppz_lFrCY2sW6j_DYtgQ.png)
+![How to build a Vue 3 reactive component with Vite 3](https://miro.medium.com/max/1400/1*y2pgsdDwXnf1AwDnk-VR-g.png)
 
 I like to work with Vuejs, and today I tried to use the next version of Vuejs: Vue3.
 
