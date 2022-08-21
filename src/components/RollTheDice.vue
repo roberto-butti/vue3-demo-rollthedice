@@ -1,5 +1,5 @@
 <template>
-  <h1>Using Ref()</h1>
+  <h1>Using ref()</h1>
   <h2>Number is: {{ dice }}</h2>
   <div>Number of rolls: {{ rolls.length }}</div>
   <div>Total: {{ total }}</div>
